@@ -10,12 +10,12 @@ import Reducers from './reducers/index';
 
 const defaultState = {
   books: [{
-    id: 1,
+    id: Math.random(),
     title: 'Harry Potter',
     category: 'Fantasy',
   },
   {
-    id: 2,
+    id: Math.random(),
     title: 'Lord of the Rings',
     category: 'Fantasy',
   }],
