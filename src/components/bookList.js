@@ -2,6 +2,7 @@
 
 import React from 'react';
 // import { useSelector } from 'react-redux';
+import Book from './book';
 
 const books = [{
   id: 1,
@@ -24,11 +25,7 @@ const bookList = () => {
         <th>Category</th>
       </tr>
       {books.map(book => (
-        <tr key={book.title}>
-          <td>{book.id}</td>
-          <td>{book.title}</td>
-          <td>{book.category}</td>
-        </tr>
+        <Book key book={book} />
       ))}
     </table>
   );
