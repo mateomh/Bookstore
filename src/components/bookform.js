@@ -12,6 +12,7 @@ const BookForm = () => (
       <select id="category">
         {category.map(x => <option key={x}>{x}</option>)}
       </select>
+      <button type="button">Add Book</button>
     </form>
   </div>
 );
