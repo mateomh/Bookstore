@@ -21,7 +21,7 @@ const defaultState = {
   }],
 };
 
-const store = createStore(Reducers);
+const store = createStore(Reducers, defaultState);
 
 ReactDOM.render(
   <Provider store={store}>
