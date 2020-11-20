@@ -1,22 +1,11 @@
 /* eslint-disable arrow-body-style */
 
 import React from 'react';
-// import { useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import Book from './book';
 
-const books = [{
-  id: 1,
-  title: 'Harry Potter',
-  category: 'Fantasy',
-},
-{
-  id: 2,
-  title: 'Lord of the Rings',
-  category: 'Fantasy',
-}];
-
 const bookList = () => {
-  // const books = useSelector(state => state);
+  const books = useSelector(state => state.books);
   return (
     <table>
       <tr>

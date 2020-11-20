@@ -1,17 +1,4 @@
-const defaultState = {
-  books: [{
-    id: 1,
-    title: 'Harry Potter',
-    category: 'Fantasy',
-  },
-  {
-    id: 2,
-    title: 'Lord of the Rings',
-    category: 'Fantasy',
-  }],
-};
-
-const booksReducer = (state = defaultState, action) => {
+const booksReducer = (state, action) => {
   switch (action.type) {
     case 'CREATE_BOOK':
       return null;
