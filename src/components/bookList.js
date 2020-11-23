@@ -6,7 +6,6 @@ import Book from './book';
 import * as Actions from '../actions/index';
 
 const bookList = () => {
-  // const books = useSelector(state => state.books);
   const store = useStore();
   const dispatch = useDispatch();
   const { books } = store.getState();
