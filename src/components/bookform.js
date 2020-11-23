@@ -1,9 +1,12 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import * as actions from '../actions/index';
 
 const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 
 const BookForm = () => {
+  const dispatch = useDispatch();
   const [title, setTitle] = useState();
   const [category, setCategory] = useState();
 
@@ -15,6 +18,17 @@ const BookForm = () => {
     }
   };
 
+  const handleSubmit = () => {
+    const bookObject = {
+      id: Math.random(),
+      title,
+      category,
+    };
+    dispatch(actions.createBook(bookObject));
+    setTitle('');
+    setCategory('');
+  };
+
   return (
     <div className="inputContainer">
       <form action="">
@@ -24,7 +38,7 @@ const BookForm = () => {
         <select id="category" onChange={handleChange} value={category}>
           {categories.map(x => <option key={x}>{x}</option>)}
         </select>
-        <button type="button">Add Book</button>
+        <button onClick={handleSubmit} type="button">Add Book</button>
       </form>
     </div>
   );
