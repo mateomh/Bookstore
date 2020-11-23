@@ -17,8 +17,9 @@ const BookForm = () => {
         <input name="title" id="title" type="text" />
         <label htmlFor="category">Category</label>
         <select id="category">
-          {categories.map(x => <option key>{x}</option>)}
+          {category.map(x => <option key={x}>{x}</option>)}
         </select>
+        <button type="button">Add Book</button>
       </form>
     </div>
   );
