@@ -9,7 +9,7 @@ const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learnin
 const BookForm = () => {
   const dispatch = useDispatch();
   const [title, setTitle] = useState();
-  const [category, setCategory] = useState();
+  const [category, setCategory] = useState(categories[0]);
 
   const handleChange = e => {
     if (e.target.id === 'title') {
@@ -27,7 +27,7 @@ const BookForm = () => {
     };
     dispatch(actions.createBook(bookObject));
     setTitle('');
-    setCategory('');
+    setCategory(categories[0]);
   };
 
   return (
