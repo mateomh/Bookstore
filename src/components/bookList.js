@@ -35,20 +35,9 @@ const bookList = props => {
   return (
     <>
       <CategoryFilter categories={categories} callback={handleFilterChange} value={category} />
-      <table>
-        <thead>
-        <tr>
-          <th>Book ID</th>
-          <th>Title</th>
-          <th>Category</th>
-        </tr>
-        </thead>
-        <tbody>
-        {filterBooks.map(book => (
-          <Book key={book.id} book={book} callbackFcn={handleRemoveBook} />
-        ))}
-        </tbody>
-      </table>
+      {filterBooks.map(book => (
+        <Book key={book.id} book={book} callbackFcn={handleRemoveBook} />
+      ))}
     </>
   );
 };
