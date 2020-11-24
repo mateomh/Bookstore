@@ -16,3 +16,11 @@
   letter-spacing: 1.9px;
   color: var(--azure);
 }
+
+.DropDown {
+  width: 10vw;
+  height: 5vh;
+  border-radius: 5px;
+  border: var(--pale-grey);
+  margin-left: 15px;
+}
