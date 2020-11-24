@@ -6,7 +6,7 @@ const filterReducer = (state = defaultState, action) => {
 
   switch (type) {
     case 'CHANGE_FILTER':
-      return state;
+      return filter;
     default:
       return state;
   }
