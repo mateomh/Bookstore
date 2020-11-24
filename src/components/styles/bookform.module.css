@@ -1,0 +1,54 @@
+@import url("../../assets/style.css");
+
+.InputContainer {
+  width: 80%;
+  margin: 5vh 0;
+  padding-left: 100px;
+}
+
+.Button {
+  width: 15%;
+  height: 5vh;
+  padding: 7px 19px 8px 22px;
+  border-radius: 3px;
+  background-color: var(--azure);
+  border: none;
+  color: #fff;
+  font-family: 'Roboto Slab', serif;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
+
+.FormTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  color: grey;
+}
+
+.Form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.FormInput {
+  width: 60%;
+  height: 5vh;
+  padding: 0 0 0 10px;
+  border: 1px solid #8e8e8e;
+  border-radius: 5px;
+}
+
+.FormDropdown {
+  width: 20%;
+  height: 5vh;
+  padding: 0 0 0 10px;
+  background-color: var(--white);
+  border: 1px solid #8e8e8e;
+  border-radius: 5px;
+}

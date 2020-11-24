@@ -2,15 +2,16 @@
 
 .BookstoreCMS {
   width: 100%;
-  height: 1434px;
-  padding: 149px 60px 123px 100px;
+
+  /* padding: 149px 60px 123px 100px; */
   background-color: var(--pale-grey);
 }
 
 .panelBg {
   width: 80%;
-  height: 1097px;
-  margin: 0 40px 65px 0;
+
+  /* margin: 0 40px 65px 0; */
+  margin: 0 auto;
   padding: 0 0 794px;
   border-radius: 4px;
   box-shadow: 0 0 60px 0 var(--black-5);

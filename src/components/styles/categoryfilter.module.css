@@ -22,5 +22,7 @@
   height: 5vh;
   border-radius: 5px;
   border: var(--pale-grey);
+  background-color: var(--white);
   margin-left: 15px;
+  padding-left: 10px;
 }
