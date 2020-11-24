@@ -11,7 +11,7 @@ function book(props) {
         <p className={BookStyles.SchoolOf}>{book.category}</p>
         <h1 className={BookStyles.title}>{book.title}</h1>
         <p className={BookStyles.Author}>Susanne Collins</p>
-        <a className={BookStyles.Comments}>Comments</a> | <a className={BookStyles.Remove}>Remove</a> | <a className={BookStyles.Edit}>Edit</a>
+        <a className={BookStyles.Comments}>Comments</a> | <a onClick={callbackFcn} id={book.id} className={BookStyles.Remove}>Remove</a> | <a className={BookStyles.Edit}>Edit</a>
       </div>
       <div className={BookStyles.Rectangle3}>
         <div className={BookStyles.Oval2} />

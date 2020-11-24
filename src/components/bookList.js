@@ -17,7 +17,7 @@ const bookList = props => {
   const [category, setCategory] = useState('All');
 
   const handleRemoveBook = (event) => {
-    const bookId = parseFloat(event.target.value);
+    const bookId = parseFloat(event.target.id);
     const book = books.find(book => book.id === bookId);
     dispatch(Actions.deleteBook(book));
   };

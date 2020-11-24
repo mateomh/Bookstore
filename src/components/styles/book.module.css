@@ -79,6 +79,11 @@
   color: #4386bf;
 }
 
+.Remove:hover {
+  cursor: pointer;
+}
+
+
 .Edit {
   width: 27px;
   height: 19px;
