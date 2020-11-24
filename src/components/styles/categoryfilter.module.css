@@ -1,0 +1,18 @@
+@import url("../../assets/style.css");
+
+.FilterContainer {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.FilterLabel {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: var(--azure);
+}
