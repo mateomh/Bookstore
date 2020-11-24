@@ -9,7 +9,7 @@ const bookList = () => {
   const store = useStore();
   const dispatch = useDispatch();
   const { books } = store.getState();
-
+  console.log(books)
   const handleRemoveBook = (event) => {
     const bookId = parseFloat(event.target.value);
     const book = books.find(book => book.id === bookId);
