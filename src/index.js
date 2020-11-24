@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 /* eslint-disable no-unused-vars */
 
 import React from 'react';
@@ -6,7 +7,7 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import App from './components/app';
 import './assets/style.css';
-import Reducers from './reducers/index';
+import Reducers from './reducers/books';
 
 const defaultState = {
   books: [{
@@ -21,11 +22,21 @@ const defaultState = {
   }],
 };
 
-const store = createStore(Reducers, defaultState);
-
-ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
-  document.getElementById('root'),
+const store = createStore(
+  Reducers,
+  defaultState,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
 );
+
+const testRender = () => {
+  ReactDOM.render(
+    <Provider store={store}>
+      <App />
+    </Provider>,
+    document.getElementById('root'),
+  );
+};
+
+store.subscribe(testRender);
+
+testRender();
