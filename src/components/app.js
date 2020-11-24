@@ -1,13 +1,11 @@
 import BookList from './bookList';
 import BookForm from './bookform';
-import CategoryFilter from './categoryfilter';
 
 const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 
 const App = () => (
   <>
-    <CategoryFilter categories={categories} />
-    <BookList />
+    <BookList categories={categories} />
     <BookForm categories={categories} />
   </>
 );
