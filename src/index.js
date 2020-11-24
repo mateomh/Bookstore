@@ -7,7 +7,7 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import App from './components/app';
 import './assets/style.css';
-import Reducers from './reducers/books';
+import Reducers from './reducers/index';
 
 const defaultState = {
   books: [{
@@ -20,11 +20,11 @@ const defaultState = {
     title: 'Lord of the Rings',
     category: 'Fantasy',
   }],
+  filter: 'All',
 };
 
 const store = createStore(
   Reducers,
-  defaultState,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
 );
 

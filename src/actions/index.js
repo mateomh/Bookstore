@@ -14,4 +14,11 @@ const deleteBook = book => {
   };
 };
 
-export { createBook, deleteBook };
+const changeFilter = filter => {
+  return {
+    type: 'CHANGE_FILTER',
+    payload: filter,
+  };
+};
+
+export { createBook, deleteBook, changeFilter };

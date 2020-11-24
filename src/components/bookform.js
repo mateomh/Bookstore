@@ -1,12 +1,13 @@
 /* eslint-disable eqeqeq */
 /* eslint-disable jsx-a11y/label-has-associated-control */
+
+import PropTypes, { string } from 'prop-types';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import * as actions from '../actions/index';
 
-const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
-
-const BookForm = () => {
+const BookForm = props => {
+  const { categories } = props;
   const dispatch = useDispatch();
   const [title, setTitle] = useState();
   const [category, setCategory] = useState(categories[0]);
@@ -43,6 +44,12 @@ const BookForm = () => {
       </form>
     </div>
   );
+};
+
+BookForm.propTypes = { categories: PropTypes.arrayOf(string) };
+
+BookForm.defaultProps = {
+  categories: [],
 };
 
 export default BookForm;

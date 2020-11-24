@@ -1,3 +1,10 @@
-const addBook = state => state;
+import { combineReducers } from 'redux';
+import filterReducer from './filter';
+import booksReducer from './books';
 
-export default addBook;
+const allReducer = combineReducers({
+  filter: filterReducer,
+  books: booksReducer,
+});
+
+export default allReducer;
