@@ -1,0 +1,69 @@
+@import url("../../assets/style.css");
+
+.Navbar {
+  width: 100%;
+  height: 10vh;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.NavContent {
+  width: 90%;
+  margin: auto;
+}
+
+.NavLinks {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.NavTitle {
+  width: 240px;
+  height: 37px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--azure);
+}
+
+.NavBooks,
+.NavCategories {
+  width: 59px;
+  height: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: var(--black-three);
+  text-transform: uppercase;
+  margin-left: 42px;
+}
+
+.NavCategories {
+  opacity: 0.5;
+}
+
+.NavUser {
+  position: absolute;
+  right: 10px;
+  height: 45px;
+  width: 45px;
+  background-image: url('../../assets/user.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.NavTitle:hover,
+.NavBooks:hover,
+.NavCategories:hover {
+  cursor: pointer;
+}

@@ -3,7 +3,7 @@
 .LessonPanel {
   display: flex;
   justify-content: space-between;
-  width: 1200px;
+  width: 70%;
   height: 170px;
   margin: 37px 100px 0;
   padding: 32px 147px 0 27px;
@@ -27,7 +27,7 @@
 
 .title {
   margin: 0;
-  font-family: RobotoSlab;
+  font-family: 'Roboto Slab', serif;
   font-size: 22px;
   font-weight: bold;
   font-stretch: normal;
@@ -40,7 +40,7 @@
 .Author {
   margin: 4px 0 40px 0;
   /* margin: 0; */
-  font-family: RobotoSlab;
+  font-family: 'Roboto Slab', serif;
   font-size: 14px;
   font-weight: 300;
   font-stretch: normal;
@@ -54,7 +54,7 @@
   width: 73px;
   height: 19px;
   margin: 3px 15px 2px 0;
-  font-family: RobotoSlab;
+  font-family: 'Roboto Slab', serif;
   font-size: 14px;
   font-weight: 300;
   font-stretch: normal;
@@ -68,7 +68,7 @@
   width: 54px;
   height: 19px;
   margin: 3px 15px 2px 0;
-  font-family: RobotoSlab;
+  font-family: 'Roboto Slab', serif;
   font-size: 14px;
   font-weight: 300;
   font-stretch: normal;
@@ -81,8 +81,8 @@
 .Edit {
   width: 27px;
   height: 19px;
-  margin: 3px 298px 2px 17px;
-  font-family: RobotoSlab;
+  margin: 3px 0 2px 17px;
+  font-family: 'Roboto Slab', serif;
   font-size: 14px;
   font-weight: 300;
   font-stretch: normal;
@@ -96,7 +96,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 15%;
+  width: 20%;
   padding: 9.9px 10px 12px 12px;
 }
 
@@ -150,7 +150,7 @@
   width: 100%;
   margin: 0;
   opacity: 0.5;
-  font-family: RobotoSlab;
+  font-family: 'Roboto Slab', serif;
   font-size: 13px;
   font-weight: 300;
   font-stretch: normal;
@@ -163,7 +163,7 @@
 .CurrentLesson {
   width: 100%;
   height: 21px;
-  font-family: RobotoSlab;
+  font-family: 'Roboto Slab', serif;
   font-size: 16px;
   font-weight: 300;
   font-stretch: normal;
@@ -181,7 +181,7 @@
   background-color: var(--azure);
   border: none;
   color: #ffffff;
-  font-family: RobotoSlab;
+  font-family: 'Roboto Slab', serif;
   font-size: 13px;
   font-weight: 300;
   font-stretch: normal;
@@ -193,7 +193,7 @@
 .UpdateProgress {
   width: 143px;
   height: 18px;
-  font-family: RobotoSlab;
+  font-family: 'Roboto Slab', serif;
   font-size: 13px;
   font-weight: 300;
   font-stretch: normal;
