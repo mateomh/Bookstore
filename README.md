@@ -1,7 +1,7 @@
 # React calculator App
 This is a Bookstore app build with React
 
-<!-- ![screenshot](./src/images/app_screenshot.png) -->
+![screenshot](./src/assets/app_screenshot.png)
 
 
 ## Built With
@@ -30,8 +30,9 @@ To get a local copy up and running follow these simple example steps.
 
 ### Usage
 
-- 
-- 
+- The user can add a book in the form at the bottom of the page
+- the user can filter the books on categories
+- the user can remove the book using the remove button
 
 ## Author
 👤 Michael Threels
