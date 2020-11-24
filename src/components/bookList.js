@@ -13,6 +13,7 @@ const bookList = props => {
   const store = useStore();
   const dispatch = useDispatch();
   const { books } = store.getState();
+  let filterBooks = books;
   const [category, setCategory] = useState('All');
 
   const handleRemoveBook = (event) => {
@@ -24,6 +25,11 @@ const bookList = props => {
   const handleFilterChange = (event) => {
     setCategory(event.target.value);
     dispatch(Actions.changeFilter(event.target.value));
+  };
+
+
+  if (category !== 'All') {
+    filterBooks = books.filter(book => book.category === category)
   }
 
   return (
@@ -38,7 +44,7 @@ const bookList = props => {
         </tr>
         </thead>
         <tbody>
-        {books.map(book => (
+        {filterBooks.map(book => (
           <Book key={book.id} book={book} callbackFcn={handleRemoveBook} />
         ))}
         </tbody>

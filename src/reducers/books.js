@@ -3,12 +3,12 @@
 const defaultState = [{
   id: Math.random(),
   title: 'Harry Potter',
-  category: 'Fantasy',
+  category: 'Sci-Fi',
 },
 {
   id: Math.random(),
   title: 'Lord of the Rings',
-  category: 'Fantasy',
+  category: 'Sci-Fi',
 }];
 
 const booksReducer = (state = defaultState, action) => {
