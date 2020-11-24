@@ -1,3 +1,9 @@
-body {
-  background-color: lightblue;
+:root {
+  --pale-grey: #f5f6fa;
+  --white: #fafafa;
+  --black-5: rgba(0, 0, 0, 0.05);
+  --black-three: #121212;
+  --medium-blue: #307bbe;
+  --dodger-blue: #379cf6;
+  --azure: #0290ff;
 }

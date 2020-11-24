@@ -6,7 +6,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import App from './components/app';
-import './assets/style.css';
+import AppStyles from './components/styles/app.module.css';
 import Reducers from './reducers/index';
 
 const defaultState = {
@@ -31,10 +31,13 @@ const store = createStore(
 const testRender = () => {
   ReactDOM.render(
     <Provider store={store}>
-      <App />
+      <div className={AppStyles.panelBg}>
+        <App />
+      </div>
     </Provider>,
     document.getElementById('root'),
   );
+  document.getElementById('root').classList.add(AppStyles.BookstoreCMS);
 };
 
 store.subscribe(testRender);
