@@ -8,25 +8,14 @@ import { createStore } from 'redux';
 import App from './components/app';
 import AppStyles from './components/styles/app.module.css';
 import Reducers from './reducers/index';
-
-const defaultState = {
-  books: [{
-    id: Math.random(),
-    title: 'Harry Potter',
-    category: 'Fantasy',
-  },
-  {
-    id: Math.random(),
-    title: 'Lord of the Rings',
-    category: 'Fantasy',
-  }],
-  filter: 'All',
-};
+import * as BooksApi from './modules/apicall';
 
 const store = createStore(
   Reducers,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
 );
+
+BooksApi.getBooks();
 
 const testRender = () => {
   ReactDOM.render(
