@@ -8,7 +8,7 @@ import { createStore } from 'redux';
 import App from './components/app';
 import AppStyles from './components/styles/app.module.css';
 import Reducers from './reducers/index';
-import * as BooksApi from './modules/apicall';
+import BooksApi from './modules/apicall';
 
 const store = createStore(
   Reducers,
