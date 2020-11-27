@@ -1,15 +1,18 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-case-declarations */
-const defaultState = [{
-  id: Math.random(),
-  title: 'Harry Potter',
-  category: 'Sci-Fi',
-},
-{
-  id: Math.random(),
-  title: 'Lord of the Rings',
-  category: 'Sci-Fi',
-}];
+
+// const defaultState = [{
+//   id: Math.random(),
+//   title: 'Harry Potter',
+//   category: 'Sci-Fi',
+// },
+// {
+//   id: Math.random(),
+//   title: 'Lord of the Rings',
+//   category: 'Sci-Fi',
+// }];
+
+const defaultState = [];
 
 const booksReducer = (state = defaultState, action) => {
   const { type, payload: book } = action;

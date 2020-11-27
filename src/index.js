@@ -8,14 +8,19 @@ import { createStore } from 'redux';
 import App from './components/app';
 import AppStyles from './components/styles/app.module.css';
 import Reducers from './reducers/index';
-import BooksApi from './modules/apicall';
+import * as BooksApi from './modules/apicall';
+import * as Actions from './actions/index';
 
 const store = createStore(
   Reducers,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
 );
 
-BooksApi.getBooks();
+async function dummy() {
+  const data = await BooksApi.getBooks();
+  store.dispatch(Actions.createBook(data));
+}
+dummy();
 
 const testRender = () => {
   ReactDOM.render(
